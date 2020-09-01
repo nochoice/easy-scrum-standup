@@ -10,5 +10,13 @@
     {
         "type": 2,
         "text": "I have send them a mail, waiting for reply."
+    },
+    {
+        "type": 1,
+        "text": "Reading documentation about Kubernetes."
+    },
+    {
+        "type": 1,
+        "text": "Solving problems with test environments."
     }
 ]
