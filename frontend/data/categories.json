@@ -1,3 +1,5 @@
 [
-    { "id": 0, "text": "Family and home" }
+    { "id": 0, "text": "Family and home" },
+    { "id": 1, "text": "Technical" },
+    { "id": 2, "text": "Waiting for others" }
 ]
