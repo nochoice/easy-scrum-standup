@@ -1,10 +1,14 @@
 [
     {
-        "type": 0,
+        "type": 1,
         "text": "Yesterday I had good progress on my task, but still not finished. I will need to roll it today for some time."
     },
     {
         "type": 0,
-        "text": "Yestaaaaerday I had good progress on my task, but still not finished. I will need to roll it today for some time."
+        "text": "Had internet issues at home. But working on it now."
+    },
+    {
+        "type": 2,
+        "text": "I have send them a mail, waiting for reply."
     }
 ]
