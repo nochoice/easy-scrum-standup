@@ -1,0 +1,92 @@
+body {
+    background-color: #50B69F;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    padding-top: 5%;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.qoute {
+    &--left {
+        transform: rotate(180deg);
+    }
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.box {
+    margin: 5% auto;
+
+    &--basic {
+        $color-main: #fff;
+
+        position: relative;
+        border-top: 4px solid $color-main;
+        border-bottom: 4px solid $color-main;
+        color: $color-main;
+        width: 30%;
+        padding: 30px;
+
+        @media (max-width: 800px) {
+            width: 70%;
+        }
+
+        .qoute {
+            height: 30px;
+            path {
+                fill: $color-main;
+            }
+
+            &--left {
+                position: absolute;
+                top: 24px;
+                left: 30px;
+            }
+
+            &--right {
+                position: absolute;
+                bottom: 24px;
+                right: 30px;
+            }
+        }
+
+        .arrow-down {
+            border-top: 20px solid $color-main;
+            position: absolute;
+            left: calc(50% - 20px);
+            bottom: -24px;
+        }
+
+        .box__note {
+            padding: 40px 20px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+}
+
+.quote__next {
+    background-color: transparent;
+    border: 4px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+    padding: 12px 32px;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
