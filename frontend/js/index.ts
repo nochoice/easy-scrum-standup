@@ -1,26 +1,18 @@
-interface Qoute {
-    type: number;
-    text: string;
-}
-
-import data from '../data/quotes.json';
+import { Qoute } from './interfaces/quote.interface';
+import { repository } from './repositories/local/qoutes'
 
 const qouteElem: HTMLElement = document.querySelector('.box__note');
 const btnNextElem: HTMLElement = document.querySelector('.quote__next');
 
-const renderQuote = (data?: Qoute): void => {
+const renderQuote = (data: Qoute): void => {
     qouteElem.innerHTML = data.text;
-}
+};
 
-const pickRandomQuote = (data: Qoute[]): Qoute => {
-    const max = data.length;
-    const index = Math.floor(Math.random()*max);
-    
-    return data[index];
-}
+btnNextElem.addEventListener('click', async () => {
+    renderQuote(await repository.pickRandom());
+});
 
-renderQuote(pickRandomQuote(data));
-
-btnNextElem.addEventListener('click', () => {
-    renderQuote(pickRandomQuote(data));
-})
+(async () => {
+    const q = await repository.pickRandom();
+    renderQuote(q);
+})();
