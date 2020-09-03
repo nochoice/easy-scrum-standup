@@ -14,7 +14,7 @@ export const repository: QouteRepository = {
             });
             return acc;
         }, {});
-        
+
         return Promise.resolve(out);
     }
 }
