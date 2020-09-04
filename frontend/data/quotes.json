@@ -1,23 +1,33 @@
 [
     {
         "type": 1,
-        "text": "Yesterday I had good progress on my task, but still not finished. I will need to roll it today for some time."
+        "text": "Yesterday I had good progress on my task, but still not finished. I will need to roll it today for some time.",
+        "tags": [1]
     },
     {
         "type": 0,
-        "text": "Had internet issues at home. But working on it now."
+        "text": "Had internet issues at home. But working on it now.",
+        "tags": [0]
     },
     {
         "type": 2,
-        "text": "I have send them a mail, waiting for reply."
+        "text": "I have send them a mail, waiting for reply.",
+        "tags": [2]
     },
     {
         "type": 1,
-        "text": "Reading documentation about Kubernetes."
+        "text": "Reading documentation about Kubernetes.",
+        "tags": [1]
     },
     {
         "type": 1,
-        "text": "Solving problems with test environments."
+        "text": "Solving problems with test environments.",
+        "tags": [1]
+    },
+    {
+        "type": 1,
+        "text": "Solving problems with test environments.",
+        "tags": [1]
     },
     {
         "type": 1,
