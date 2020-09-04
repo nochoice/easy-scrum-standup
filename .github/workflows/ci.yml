@@ -20,5 +20,7 @@ jobs:
         uses: actions/setup-node@v1.4.3
       - name: Show pwd
         run: pwd
+      - name: List dir
+        run: ls
       
       
