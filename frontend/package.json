@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx parcel index.html"
+    "dev": "npx parcel index.html",
+    "build:prod": "npx parcel build index.html -- --out-dir './dist-public'"
   },
   "author": "",
   "license": "ISC",
