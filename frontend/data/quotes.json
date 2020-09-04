@@ -21,6 +21,7 @@
     },
     {
         "type": 1,
-        "text": "My laptop is updating. Need to wait for finish it."
+        "text": "My laptop is updating. Need to wait for finish it.",
+        "tags": [1]
     }
 ]
