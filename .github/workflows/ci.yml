@@ -14,6 +14,11 @@ jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo "Hello ${{ github.event.inputs.name }}!"
-        echo "- in ${{ github.event.inputs.home }}!"
+      - name: Checkout
+        uses: actions/checkout@v2.3.2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1.4.3
+      - name: GitHub Action for Firebase
+        uses: w9jds/firebase-action@v1.5.0
+      
+      
