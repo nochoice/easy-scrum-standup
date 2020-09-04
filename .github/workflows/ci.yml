@@ -19,8 +19,8 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.3
       - name: Install frontend dependencies
-        run: cd frontend && npm i
+        run: cd frontend && npm i && npm run build:prod
       - name: List dir
-        run: ls
+        run: cd frontend && ls
       
       
