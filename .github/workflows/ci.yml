@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-node@v1.4.3
         with:
           node-version: '12'
+      - name: Install Parcel globaly
+        run: npm install -g parcel-bundler
       - name: Install frontend dependencies
         run: cd frontend && npm i && npm run build:prod
       - name: List dir
