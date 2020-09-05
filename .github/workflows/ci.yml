@@ -24,5 +24,15 @@ jobs:
         run: cd frontend && npm i && npm run build:prod
       - name: List dir
         run: cd frontend && ls
+      - name: Copy fronend to public firabase structure
+        run: cp -a frontend/dist-public/. public/
+      - name: List dir
+        run: cd public && ls
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       
       
