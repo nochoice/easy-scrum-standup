@@ -1,17 +1,8 @@
-name: Manually triggered workflow
+name: Manually trigger for deploy to Firebase
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Person to greet'
-        required: true
-        default: 'Mona the Octocat'
-      home:
-        description: 'location'
-        required: false
-
+  workflow_dispatch
 jobs:
-  say_hello:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,12 +13,8 @@ jobs:
           node-version: '12'
       - name: Install frontend dependencies
         run: cd frontend && npm i && npm run build:prod
-      - name: List dir
-        run: cd frontend && ls
       - name: Copy fronend to public firabase structure
         run: cp -a frontend/dist-public/. public/
-      - name: List dir
-        run: cd public && ls
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
