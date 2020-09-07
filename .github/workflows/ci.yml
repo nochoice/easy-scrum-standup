@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '12'
       - name: Install frontend dependencies
-        run: cd frontend && npm i && npm run build:prod
+        run: cd frontend && npm ci --prefer-offline --no-audit && npm run build:prod
       - name: Copy fronend to public firabase structure
         run: cp -a frontend/dist-public/. public/
       - name: Deploy to Firebase
