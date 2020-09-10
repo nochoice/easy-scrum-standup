@@ -55,7 +55,7 @@
         .qoute {
             position: absolute;
             height: 30px;
-            width: 30px;
+            width: 40px;
 
             path {
                 fill: $color-main;
