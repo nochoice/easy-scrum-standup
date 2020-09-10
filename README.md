@@ -50,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Did you ever find yourself in a situation that you are joininy a daily (daily standup) and you realize you kind of forgot to work on the project?
+Did you ever find yourself in a situation that you are joining a daily (daily standup) and you realize you kind of forgot to work on the project?
 Fear no more -> we got you covered.
 
 This project is a simple page with random quotes which you can use on your daily if you happen to forget to work on the project or you just end up on a unproductive daily meeting.
