@@ -33,5 +33,10 @@
         "type": 1,
         "text": "My laptop is updating. Need to wait for finish it.",
         "tags": [1]
+    },
+    {
+        "type": 0,
+        "text": "The MSSA got stuck during the PDC so I had to rake the ICIM database again, so that will take the whole day to regress test.",
+        "tags": [0]
     }
 ]
