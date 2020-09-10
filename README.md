@@ -1,8 +1,10 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+<p align="center">
+  <a href="https://github.com/nochoice/easy-scrum-standup/graphs/contributors"><img src="https://img.shields.io/github/contributors/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Contributors"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/network/members"><img src="https://img.shields.io/github/forks/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Forks"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/stargazers"><img src="https://img.shields.io/github/stars/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Stargazers"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/issues"><img src="https://img.shields.io/github/issues/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Issues"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/nochoice/easy-scrum-standup.svg?style=flat-square" alt="License"></a>
+</p>
 
 
 <!-- PROJECT LOGO -->
