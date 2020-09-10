@@ -30,10 +30,9 @@
 
 <style lang="scss" scoped>
     .box {
-        margin: 5% auto;
-
         $color-main: #fff;
-
+        
+        margin: 5% auto;
         position: relative;
         border-top: 4px solid $color-main;
         border-bottom: 4px solid $color-main;

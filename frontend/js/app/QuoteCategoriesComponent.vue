@@ -1,6 +1,6 @@
 <template lang="pug">
-    .qoute-categories 
-        span.tag(v-for="tag in tags") {{tag.text}}
+    .categories 
+        span(v-for="tag in tags") {{tag.text}}
             b {{tag.count}}
 </template>
 
@@ -15,22 +15,21 @@
         },
         computed: {
             tags: function () {
-                this.categories.sort((a, b) => a.text.localeCompare(b.text));
-
                 return this.categories
+                    .sort((a, b) => a.text.localeCompare(b.text))
                     .map((cat: QouteCategory) => ({text: cat.text, count: this.categoriesAggregate[cat.id]}))   
-                }
+            }
         }
     });
 </script>
 
 <style lang="scss" scoped>
-   .qoute-categories {
+   .categories {
         margin-top: 32px;
         text-align: center;
         font-weight: 300;
 
-        .tag {
+        span {
             margin-right: 8px;
             border: 1px solid #fff;
             padding-left: 4px;
@@ -44,5 +43,3 @@
         }
     }
 </style>
-
-
