@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <!-- <a href="https://github.com/github_username/repo_name">
+  <!-- <a href="https://github.com/nochoice/easy-scrum-standup">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
@@ -50,10 +50,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
+Did you ever find yourself in a situation that you are joininy a daily (daily standup) and you realize you kind of forgot to work on the project?
+Fear no more -> we got you covered.
 
+This project is a simple page with random quotes which you can use on your daily if you happen to forget to work on the project or you just end up on a unproductive daily meeting.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -68,6 +68,10 @@ npm install npm@latest -g
 ```
 
 ### Installation
+
+The best place to see how the project is actually build is in the github workflow files: https://github.com/nochoice/easy-scrum-standup/blob/master/.github/workflows/ci.yml
+
+But this below could be still vaild.
 
 1. Clone the repo
 ```sh
