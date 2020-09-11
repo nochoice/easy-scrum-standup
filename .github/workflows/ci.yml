@@ -13,8 +13,8 @@ jobs:
           node-version: '12'
       - name: Install yarn
         run: npm install -g yarn
-      - name: Install frontend dependencies
-        run: cd frontend-vue && yarn build
+      - name: Install frontend dependencies and build
+        run: cd frontend-vue && yarn install && yarn build
       - name: Copy frontend to public firabase structure
         run: cp -a frontend-vue/dist/. public/
       - name: Deploy to Firebase
