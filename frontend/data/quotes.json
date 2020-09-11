@@ -37,5 +37,9 @@
     {
         "text": "Yesterday I participated on another project. So nothing else to say.",
         "tags": [3]
+    },
+    {
+        "text": "The MSSA got stuck during the PDC so I had to rake the ICIM database again, so that will take the whole day to regress test.",
+        "tags": [0]
     }
 ]

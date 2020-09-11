@@ -1,8 +1,10 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+<p align="center">
+  <a href="https://github.com/nochoice/easy-scrum-standup/graphs/contributors"><img src="https://img.shields.io/github/contributors/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Contributors"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/network/members"><img src="https://img.shields.io/github/forks/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Forks"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/stargazers"><img src="https://img.shields.io/github/stars/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Stargazers"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/issues"><img src="https://img.shields.io/github/issues/nochoice/easy-scrum-standup.svg?style=flat-square" alt="Issues"></a>
+  <a href="https://github.com/nochoice/easy-scrum-standup/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/nochoice/easy-scrum-standup.svg?style=flat-square" alt="License"></a>
+</p>
 
 
 <!-- PROJECT LOGO -->
@@ -94,8 +96,9 @@ Contributions are what make the open source community such an amazing place to b
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+4. <b>One of the commits has to include at least 1 new entry inside the https://github.com/nochoice/easy-scrum-standup/blob/master/frontend/data/quotes.json else the pull request will not be accepted.  </b>
+5. Push to the Branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
 
 <!-- LICENSE -->
 ## License
