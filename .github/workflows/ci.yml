@@ -19,7 +19,7 @@ jobs:
         run: cp -a frontend-vue/dist/. public/
       - name: Deploy to Firebase
         run: |
-          sudo yarn global add firebase
+          sudo yarn global add firebase-tools
           firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
 
       
