@@ -11,13 +11,15 @@ jobs:
         uses: actions/setup-node@v1.4.3
         with:
           node-version: '12'
+      - name: Install yarn
+        run: npm install -g yarn
       - name: Install frontend dependencies
-        run: cd frontend && npm ci --prefer-offline --no-audit && npm run build:prod
-      - name: Copy fronend to public firabase structure
-        run: cp -a frontend/dist-public/. public/
+        run: cd frontend-vue && yarn build
+      - name: Copy frontend to public firabase structure
+        run: cp -a frontend-vue/dist/. public/
       - name: Deploy to Firebase
         run: |
-          sudo npm install -g firebase-tools
+          sudo yarn add firebase
           firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
 
       
