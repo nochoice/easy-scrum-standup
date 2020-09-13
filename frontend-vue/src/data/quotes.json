@@ -41,5 +41,9 @@
     {
         "text": "The MSSA got stuck during the PDC so I had to rake the ICIM database again, so that will take the whole day to regress test.",
         "tags": [1]
+    },
+    {
+        "text": "Yesterday I had a fruit full meeting with customer and we arrange a follow up for next week. I will let you know what will be next steps.",
+        "tags": [3]
     }
 ]
