@@ -1,18 +1,23 @@
 <template lang="pug">
     v-app
-        v-container
-            h1 Easy Scrum Standup
-            .navigation
-                center()
-                    v-badge(bordered color="secondary" :content="qoutesNum" overlap )
-                        v-btn(@click="changeQoute" rounded class="white--text" color="primary" depressed :disabled="isCategoriesSelectOpen") Pick random
-                    div.divider or
-                    v-btn(v-show="!isCategoriesSelectOpen" rounded small @click="isCategoriesSelectOpen = true") Select from categories
-                
-                quote-categories-select-component(v-show="isCategoriesSelectOpen" :categories="categories" @filteredQoute="onCategoriesSelectQoute" @close="onCategoriesSelectClose")
-            quote-component(:data="qoute")
-            about-component
-            //- quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
+        v-main
+            v-container
+                h1 {{ projectName }}
+                .navigation
+                    center()
+                        v-badge(bordered color="secondary" :content="qoutesNum" overlap )
+                            v-btn(@click="changeQoute" rounded class="white--text" color="primary" depressed :disabled="isCategoriesSelectOpen") Pick random
+                        div.divider or
+                        v-btn(v-show="!isCategoriesSelectOpen" rounded small @click="isCategoriesSelectOpen = true") Select from categories
+                    
+                    quote-categories-select-component(v-show="isCategoriesSelectOpen" :categories="categories" @filteredQoute="onCategoriesSelectQoute" @close="onCategoriesSelectClose")
+                quote-component(:data="qoute")
+                about-component
+                //- quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
+        v-footer(color="white") 
+            v-col(class="text-center" cols="12") {{ new Date().getFullYear() }} — 
+                strong © {{ projectName }}
+
 </template>
 
 <script>
@@ -35,6 +40,7 @@
         },  
         data() {
             return {
+                projectName: 'Easy Scrum Standup',
                 qoute: {},
                 qoutes: [],
                 categories: [],
@@ -77,9 +83,9 @@
         padding: 4px 0;
     }
 
-    @media (min-width: 1264px) {
+    @media (min-width: 900px) {
         .container {
-            max-width: 772px;
+            max-width: 600px;
         }
     }
 </style>

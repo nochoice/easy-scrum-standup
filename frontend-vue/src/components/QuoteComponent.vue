@@ -36,6 +36,7 @@
         border-top: 2px solid $color-main;
         border-bottom: 2px solid $color-main;
         padding: 30px;
+        width: 80%;
 
         .note {
             padding: 40px 20px;
