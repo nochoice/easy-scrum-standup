@@ -1,7 +1,10 @@
 <template lang="pug">
-    .categories 
-        span(v-for="tag in tags") {{tag.text}}
-            b {{tag.count}}
+    .categories
+        h3(class="mb-3") Stats
+        v-chip(v-for="(tag, index) in tags" :key="index" color="grey lighten-2" small)
+            v-avatar(left class="grey" small) {{tag.count}}
+            | {{tag.text}}
+
 </template>
 
 <script lang="ts">
@@ -25,23 +28,11 @@
 
 <style lang="scss" scoped>
    .categories {
-        margin-top: 40px;
+        margin-top: 20px;
         text-align: center;
-        font-weight: 300;
 
-        span {
-            margin-right: 8px;
-            margin-bottom: 16px;
-            border: 1px solid #000;
-            padding-left: 8px;
-            display: inline-block;
-
-            b {
-                background-color: #000;
-                color: #fff;
-                padding: 0 8px;
-                margin-left: 8px;
-            }
+        .v-chip {
+            margin-right: 4px;
         }
     }
 </style>

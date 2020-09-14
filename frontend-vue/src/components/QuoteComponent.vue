@@ -15,8 +15,6 @@
                 g
                 path(d='M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z')
                 path(d='M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z')
-
-        .arrow-down &nbsp;
 </template>
 
 <script lang="ts">
@@ -35,18 +33,10 @@
         
         margin:  60px auto;
         position: relative;
-        border-top: 4px solid $color-main;
-        border-bottom: 4px solid $color-main;
-        width: 30%;
+        border-top: 2px solid $color-main;
+        border-bottom: 2px solid $color-main;
         padding: 30px;
-
-        @media (max-width: 1024px) {
-            width: 60%;
-        }
-
-        @media (max-width: 778px) {
-            width: 70%;
-        }
+        width: 80%;
 
         .note {
             padding: 40px 20px;
@@ -74,17 +64,6 @@
                 bottom: 24px;
                 right: 30px;
             }
-        }
-
-        .arrow-down {
-            position: absolute;
-            left: calc(50% - 20px);
-            bottom: -24px;
-            border-top: 20px solid $color-main;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            width: 0;
-            height: 0;
         }
     }
 </style>

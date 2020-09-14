@@ -1,17 +1,31 @@
 <template lang="pug">
-    .app-wrapper 
-        h1 Easy Scrum Standup
-        quote-component(:data="qoute")
-        center
-            button.btn-next(@click="changeQoute") Pick another
+    v-app
+        v-main
+            v-container
+                h1 {{ projectName }}
+                .navigation
+                    center()
+                        v-badge(bordered color="secondary" :content="qoutesNum" overlap )
+                            v-btn(@click="changeQoute" rounded class="white--text" color="primary" depressed :disabled="isCategoriesSelectOpen") Pick random
+                        div.divider or
+                        v-btn(v-show="!isCategoriesSelectOpen" rounded small @click="isCategoriesSelectOpen = true") Select from categories
+                    
+                    quote-categories-select-component(v-show="isCategoriesSelectOpen" :categories="categories" @filteredQoute="onCategoriesSelectQoute" @close="onCategoriesSelectClose")
+                quote-component(:data="qoute")
+                about-component
+                //- quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
+        v-footer(color="white") 
+            v-col(class="text-center" cols="12") {{ new Date().getFullYear() }} — 
+                strong © {{ projectName }}
 
-        quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
 </template>
 
 <script>
     import Vue from "vue";
     import QuoteComponent from './components/QuoteComponent.vue';
     import QuoteCategoriesComponent from './components/QuoteCategoriesComponent.vue';
+    import QuoteCategoriesSelectComponent from './components/QuoteCategoriesSelectComponent.vue';
+    import AboutComponent from './components/AboutComponent.vue';
     import { repository as qouteRepository } from './repositories/local/qoutes';
     import { repository as qouteCategoryRepository } from './repositories/local/qoute-category';
 
@@ -20,23 +34,40 @@
     export default Vue.extend({
         components: {
             QuoteComponent,
-            QuoteCategoriesComponent
+            QuoteCategoriesComponent,
+            QuoteCategoriesSelectComponent,
+            AboutComponent
         },  
         data() {
             return {
+                projectName: 'Easy Scrum Standup',
                 qoute: {},
+                qoutes: [],
                 categories: [],
-                categoriesAggregate: {}
+                categoriesAggregate: {},
+                isCategoriesSelectOpen: false
             };
+        },
+        computed: {
+            qoutesNum: function() {
+                return this.qoutes.length
+            }
         },
         methods: {
             changeQoute: async function() {
                 this.qoute = await qouteRepository.pickRandom();
+            },
+            onCategoriesSelectQoute: function(qoute) {
+                this.qoute = qoute;
+            },
+            onCategoriesSelectClose: function() {
+                this.isCategoriesSelectOpen = false
             }
         },
         async mounted() {
             this.categoriesAggregate = await qouteRepository.aggregateTags();
             this.categories = await qouteCategoryRepository.list();
+            this.qoutes = await qouteRepository.list();
             this.qoute = await qouteRepository.pickRandom();
         }
     });
@@ -45,20 +76,16 @@
 <style lang="scss" scoped>
     h1 {
         text-align: center;
-        padding: 0;
-        margin: 0;
-        font-size: 40px;
+        padding: 60px 0 12px;
     }
-    button {
-        background-color: transparent;
-        border: 2px solid #000;
-        color: #000;
-        margin: 0 auto;
-        padding: 12px 32px;
-        font-size: 16px;
-        text-transform: uppercase;
-        outline: none;
-        cursor: pointer;
+
+    .divider {
+        padding: 4px 0;
+    }
+
+    @media (min-width: 900px) {
+        .container {
+            max-width: 600px;
+        }
     }
 </style>
-

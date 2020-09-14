@@ -13,5 +13,8 @@ export const repository = {
         }, {});
 
         return Promise.resolve(out);
-    }
+    },
+
+    getByCategories: (categoryIds) => Promise.resolve(data.filter(item => !!item.tags.filter(o => categoryIds.includes(o)).length))
+
 }
