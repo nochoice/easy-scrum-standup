@@ -1,7 +1,8 @@
 <template lang="pug">
     .categories
-        v-chip(v-for="tag in tags" color="grey lighten-2" small)
-            //- v-avatar(left class="primary darken-1" small) {{tag.count}}
+        h3(class="mb-3") Stats
+        v-chip(v-for="(tag, index) in tags" :key="index" color="grey lighten-2" small)
+            v-avatar(left class="grey" small) {{tag.count}}
             | {{tag.text}}
 
 </template>
@@ -27,7 +28,7 @@
 
 <style lang="scss" scoped>
    .categories {
-        margin-top: 40px;
+        margin-top: 20px;
         text-align: center;
 
         .v-chip {

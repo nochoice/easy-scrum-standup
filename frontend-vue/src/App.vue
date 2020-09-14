@@ -2,15 +2,15 @@
     v-app
         h1 Easy Scrum Standup
         .navigation
-            center(v-if="!isCategoriesSelectOpen")
+            center()
                 v-badge(bordered color="secondary" :content="qoutesNum" overlap)
                     v-btn(@click="changeQoute" rounded class="white--text" color="primary" depressed) Pick random
                 div.divider or
-                v-btn(rounded small @click="isCategoriesSelectOpen = true") Select from categories
+                v-btn(v-show="!isCategoriesSelectOpen" rounded small @click="isCategoriesSelectOpen = true") Select from categories
             
-            quote-categories-select-component(v-if="isCategoriesSelectOpen" :categories="categories" @filteredQoute="onCategoriesSelectQoute" @close="onCategoriesSelectClose")
+            quote-categories-select-component(v-show="isCategoriesSelectOpen" :categories="categories" @filteredQoute="onCategoriesSelectQoute" @close="onCategoriesSelectClose")
         quote-component(:data="qoute")
-        //- quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
+        quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
 </template>
 
 <script>
