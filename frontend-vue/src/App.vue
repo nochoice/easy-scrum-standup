@@ -2,7 +2,9 @@
     v-app
         v-main
             v-container
-                h1 {{ projectName }}
+                .logo(class="text-center my-10")
+                    logo-component
+                //- h1 {{ projectName }}
                 .navigation
                     v-badge(bordered color="secondary" :content="qoutesNum" overlap )
                         v-btn(@click="changeQoute" rounded class="white--text" color="primary" :disabled="isCategoriesSelectOpen") Pick random
@@ -16,7 +18,6 @@
                     v-btn(small rounded color="white--text grey darken-3" href="https://github.com/nochoice/easy-scrum-standup" target="_blank") 
                         v-icon(left) mdi-github
                         | github
-                //- quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
         v-footer(color="white") 
             v-col(class="text-center" cols="12") {{ new Date().getFullYear() }} — 
                 strong © {{ projectName }}
@@ -29,6 +30,7 @@
     import QuoteCategoriesComponent from './components/QuoteCategoriesComponent.vue';
     import QuoteCategoriesSelectComponent from './components/QuoteCategoriesSelectComponent.vue';
     import AboutComponent from './components/AboutComponent.vue';
+    import LogoComponent from './components/LogoComponent.vue';
     import { repository as qouteRepository } from './repositories/local/qoutes';
     import { repository as qouteCategoryRepository } from './repositories/local/qoute-category';
 
@@ -39,7 +41,8 @@
             QuoteComponent,
             QuoteCategoriesComponent,
             QuoteCategoriesSelectComponent,
-            AboutComponent
+            AboutComponent,
+            LogoComponent
         },  
         data() {
             return {
