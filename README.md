@@ -13,7 +13,7 @@
   <!-- <a href="https://github.com/nochoice/easy-scrum-standup">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
-
+  <img src="logo.png">
   <h3 align="center">Easy Scrum Standup</h3>
 
   <p align="center">
