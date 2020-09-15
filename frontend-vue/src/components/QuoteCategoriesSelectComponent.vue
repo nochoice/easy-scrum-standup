@@ -1,17 +1,16 @@
 <template lang="pug">
     .qoute-category-select
+        h3(class="mb-4") Select from categories
         .categories
-            h3(class="mb-4") Select from categories
             v-chip(v-for="(category, index) in categories" :key="category.id" class="mr-2 mb-1" text-color="white" color="pink" @click="select(category)" small)
                 v-avatar(left v-if="isSelected(category)")
                     v-icon mdi-checkbox-marked-circle
                 | {{ category.text }}
-            div
-                br
-                v-badge(bordered color="secondary" :content="selectedQoutes.length" overlap)
-                    v-btn(@click="changeQoute()" rounded class="white--text" color="primary" depressed :disabled="!selectedQoutes.length") Pick random
-                .divider or
-                v-btn(rounded small @click="back") Close
+        div(class="mt-6")
+            v-badge(bordered color="secondary" :content="selectedQoutes.length" overlap)
+                v-btn(@click="changeQoute()" rounded class="white--text" color="primary" :disabled="!selectedQoutes.length") Pick random
+            .divider or
+            v-btn(rounded small @click="back") Close
 </template>
 
 <script lang="js">
