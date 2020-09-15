@@ -13,6 +13,11 @@
                     quote-categories-select-component(v-show="isCategoriesSelectOpen" :categories="categories" @filteredQoute="onCategoriesSelectQoute" @close="onCategoriesSelectClose")
                 quote-component(:data="qoute")
                 about-component
+                br
+                center
+                    v-btn(small rounded color="white--text grey darken-3" href="https://github.com/nochoice/easy-scrum-standup" target="_blank") 
+                        v-icon(left) mdi-github
+                        | github
                 //- quote-categories-component(:categories="categories" :categoriesAggregate="categoriesAggregate")
         v-footer(color="white") 
             v-col(class="text-center" cols="12") {{ new Date().getFullYear() }} — 
