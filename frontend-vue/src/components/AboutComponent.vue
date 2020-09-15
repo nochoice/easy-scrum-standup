@@ -1,8 +1,8 @@
 <template lang="pug">
     .about
         center
-            v-btn(v-show="!isOpened" small rounded @click="isOpened = true") About the project
-        .detail(v-show="isOpened" class="full-width pt-10 pb-10")
+            v-btn(v-show="!isOpened" small rounded @click="isOpened = true" color="white--text blue-grey darken-3") About the project
+        .detail(v-show="isOpened" class="full-width pt-10 pb-10 blue-grey darken-3 white--text")
             v-row(align="center" justify="center")
                 v-col(class="text-center" xs=10 sm=10 md=6 lg=3)
                     h2(class="mb-4") About the project
@@ -15,6 +15,8 @@
                     p(class="text-center") This project is a simple page with 
                         b random quotes 
                         | which you can use on your daily if you happen to forget to work on the project or you just end up on a unproductive daily meeting.
+                    p(class="text-center") 
+                        v-btn(small rounded @click="isOpened = false" color="" class="mt-4") Close
 </template>
 
 <script lang="js">
@@ -30,8 +32,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .detail {
-        color: #fff;
-        background:  rgba(0, 0, 0, 0.87);
-    }
+
 </style>>
