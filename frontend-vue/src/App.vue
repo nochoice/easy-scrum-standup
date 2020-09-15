@@ -2,7 +2,7 @@
     v-app
         v-main
             v-container
-                .logo(class="text-center ma-10")
+                .logo(class="text-center my-10")
                     logo-component
                 //- h1 {{ projectName }}
                 .navigation
