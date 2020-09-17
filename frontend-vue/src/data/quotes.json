@@ -26,11 +26,6 @@
     },
     {
         "type": 1,
-        "text": "Solving problems with test environments.",
-        "tags": [1]
-    },
-    {
-        "type": 1,
         "text": "My laptop is updating. Need to wait for finish it.",
         "tags": [1]
     },
@@ -45,5 +40,25 @@
     {
         "text": "Yesterday I had a fruit full meeting with customer and we arrange a follow up for next week. I will let you know what will be next steps.",
         "tags": [3]
+    },
+    {
+        "text": "I was deploying new code yesterday, but it failed by the last step, so need to re-run it.",
+        "tags": [1]
+    },
+    {
+        "text": "Are we sure we use the right framework for this project?",
+        "tags": [1]
+    },
+    {
+        "text": "Sorry that slipped off my to-do, will have a look at it today.",
+        "tags": [4]
+    },
+    {
+        "text": "My password has expired, anyone has a link to the helpdesk?",
+        "tags": [1]
+    },
+    {
+        "text": "We should consider changing the management framework, I do not think this way of working is ideal for our project.",
+        "tags": [4]
     }
 ]
