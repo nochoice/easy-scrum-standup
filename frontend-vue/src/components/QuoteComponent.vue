@@ -28,10 +28,10 @@
         width: 80%;
 
         .note {
-            padding: 40px 20px;
             font-size: 20px;
-            text-align: center;
             font-weight: 300;
+            text-align: center;
+            padding: 40px 20px;
         }
 
         .qoute {
@@ -40,15 +40,8 @@
             width: 40px;
             font-size: 44px;
 
-            &.left {
-                top: 24px;
-                left: 30px;
-            }
-
-            &.right {
-                bottom: 24px;
-                right: 30px;
-            }
+            &.left      { top: 24px; left: 30px; }
+            &.right     { bottom: 24px; right: 30px; }
         }
     }
 </style>
