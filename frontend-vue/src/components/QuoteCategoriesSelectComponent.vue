@@ -7,9 +7,9 @@
                     v-icon mdi-checkbox-marked-circle
                 | {{ category.text }}
         div(class="mt-6")
-            v-badge(bordered color="secondary" :content="selectedQoutes.length" overlap)
+            v-badge(bordered overlap color="secondary" :content="selectedQoutes.length" )
                 v-btn(@click="changeQoute()" rounded class="white--text" color="primary" :disabled="!selectedQoutes.length") Pick random
-            .divider or
+            .divider(class="pa-2") or
             v-btn(rounded small @click="back") Close
 </template>
 
@@ -54,12 +54,6 @@
 </script>
 
 <style lang="scss" scoped>
-   .qoute-category-select {
-       text-align: center;
-   }
-   .divider {
-       display: block;
-        padding: 4px 0;
-    }
+
 </style>
  

@@ -4,9 +4,9 @@
             v-btn(v-show="!isOpened" small rounded @click="isOpened = true" color="white--text blue-grey darken-3") 
                 v-icon(left) mdi-sheep
                 | About the project
-        .detail(v-show="isOpened" class="full-width pt-10 pb-10 blue-grey darken-3 white--text")
+        .detail(v-show="isOpened" class="full-width pa-10 blue-grey darken-3 white--text")
             v-row(align="center" justify="center")
-                v-col(class="text-center holder" sm=8 md=6 lg=3)
+                v-col(class="text-center my-2" sm=8 md=6 lg=3)
                     h2(class="mb-1") About the project
                     h3(class="text-center mb-4") Fear no more -&gt; we got you covered.
         
@@ -33,7 +33,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .holder {
-        margin: 0 40px;
-    }
+
 </style>>

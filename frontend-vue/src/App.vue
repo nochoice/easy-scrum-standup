@@ -4,18 +4,39 @@
             v-container
                 .logo(class="text-center my-10")
                     logo-component
-                //- h1 {{ projectName }}
-                .navigation
-                    v-badge(bordered color="secondary" :content="qoutesNum" overlap )
-                        v-btn(@click="changeQoute" rounded class="white--text" color="primary" :disabled="isCategoriesSelectOpen") Pick random
-                    .divider or
-                    v-btn(v-show="!isCategoriesSelectOpen" rounded small @click="isCategoriesSelectOpen = true") Select from categories
+
+                .navigation(class="text-center")
+                    v-badge(bordered color="secondary" :content="qoutesNum" overlap)
+                        v-btn(
+                            @click="changeQoute" 
+                            rounded 
+                            color="primary" 
+                            :disabled="isCategoriesSelectOpen") Pick random
+
+                    .divider(class="pa-2") or
+
+                    v-btn(
+                        v-show="!isCategoriesSelectOpen" 
+                        rounded 
+                        small 
+                        @click="isCategoriesSelectOpen = true") Select from categories
                     
-                    quote-categories-select-component(v-show="isCategoriesSelectOpen" :categories="categories" @filteredQoute="onCategoriesSelectQoute" @close="onCategoriesSelectClose")
+                    quote-categories-select-component(
+                        v-show="isCategoriesSelectOpen" 
+                        :categories="categories" 
+                        @filteredQoute="onCategoriesSelectQoute" 
+                        @close="onCategoriesSelectClose")
+
                 quote-component(:data="qoute")
                 about-component(class="mb-6")
                 center
-                    v-btn(small rounded color="white--text grey darken-3" href="https://github.com/nochoice/easy-scrum-standup" target="_blank") 
+                    v-btn(
+                        small 
+                        rounded 
+                        color="white--text grey darken-3" 
+                        href="https://github.com/nochoice/easy-scrum-standup" 
+                        target="_blank") 
+
                         v-icon(left) mdi-github
                         | github
         v-footer(color="white") 
@@ -80,18 +101,6 @@
 </script>
 
 <style lang="scss" scoped>
-    h1 {
-        text-align: center;
-        padding: 60px 0 12px;
-    }
-
-    .divider {
-        padding: 4px 0;
-    }
-    .navigation {
-        text-align: center;
-    }
-
     @media (min-width: 900px) {
         .container {
             max-width: 600px;
