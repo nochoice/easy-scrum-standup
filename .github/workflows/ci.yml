@@ -14,9 +14,9 @@ jobs:
       - name: Install yarn
         run: npm install -g yarn
       - name: Install frontend dependencies and build
-        run: cd frontend-vue && yarn install && yarn build
+        run: cd frontend && yarn install && yarn build
       - name: Copy frontend to public firabase structure
-        run: cp -a frontend-vue/dist/. public/
+        run: cp -a frontend/dist/. public/
       - name: Deploy to Firebase
         run: |
           sudo yarn global add firebase-tools
