@@ -31,11 +31,12 @@
                 about-component(class="mb-6")
                 center
                     v-btn(
-                        small 
-                        rounded 
-                        color="white--text grey darken-3" 
-                        href="https://github.com/nochoice/easy-scrum-standup" 
-                        target="_blank") 
+                        small
+                        rounded
+                        color="white--text grey darken-3"
+                        href="https://github.com/nochoice/easy-scrum-standup"
+                        target="_blank"
+                        rel="noopener")
 
                         v-icon(left) mdi-github
                         | github
