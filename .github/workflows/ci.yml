@@ -42,7 +42,10 @@ jobs:
         
       - name: Download firebase binary if not in cache or os change
         if: steps.firebase-bin.outputs.cache-hit != 'true'
-        run: curl -Lo ./firebase_bin https://firebase.tools/bin/linux/latest
+        run: |
+          curl -Lo ./firebase_bin https://firebase.tools/bin/linux/latest
+          pwd
+          ls -la
         
       - name: Build frontend dependencies
         run: cd frontend && yarn build
@@ -52,6 +55,8 @@ jobs:
       
       - name: Deploy to Firebase
         run: |
+          pwd
+          ls -la
           chmod 755 ./firebase-bin
           ./firebase-bin deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
 
