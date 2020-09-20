@@ -52,6 +52,7 @@ jobs:
       
       - name: Deploy to Firebase
         run: |
+          chmod 755 ./firebase-bin
           ./firebase-bin deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
 
       
