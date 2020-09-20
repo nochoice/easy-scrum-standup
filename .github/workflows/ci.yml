@@ -44,8 +44,6 @@ jobs:
         if: steps.firebase-bin.outputs.cache-hit != 'true'
         run: |
           curl -Lo ./firebase_bin https://firebase.tools/bin/linux/latest
-          pwd
-          ls -la
         
       - name: Build frontend dependencies
         run: cd frontend && yarn build
@@ -55,10 +53,8 @@ jobs:
       
       - name: Deploy to Firebase
         run: |
-          pwd
-          ls -la
-          chmod 755 ./firebase-bin
-          ./firebase-bin deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
+          chmod 755 ./firebase_bin
+          ./firebase_bin deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
 
       
       
