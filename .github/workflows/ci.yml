@@ -7,20 +7,52 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.2
+      
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.3
         with:
           node-version: '12'
-      - name: Install yarn
-        run: npm install -g yarn
-      - name: Install frontend dependencies and build
-        run: cd frontend && yarn install && yarn build
+#       - name: Install yarn
+#         run: npm install -g yarn
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+      
+      - uses: actions/cache@v2
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - uses: actions/cache@v2
+        id: firebase-bin
+        with:
+          path: ./firebase_bin
+          key: ${{ runner.os }}
+          restore-keys: |
+            ${{ runner.os }}
+
+
+      - name: Install dependencies if not already present
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: cd frontend && yarn install
+        
+      - name: Download firebase binary if not in cache or os change
+        if: steps.firebase-bin.outputs.cache-hit != 'true'
+        run: curl -Lo ./firebase_bin https://firebase.tools/bin/linux/latest
+        
+      - name: Build frontend dependencies
+        run: cd frontend && yarn build
+        
       - name: Copy frontend to public firabase structure
         run: cp -a frontend/dist/. public/
+      
       - name: Deploy to Firebase
         run: |
-          sudo yarn global add firebase-tools
-          firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
+          ./firebase-bin deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
 
       
       
