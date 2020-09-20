@@ -3,6 +3,14 @@ module.exports = {
     "vuetify"
   ], 
   productionSourceMap: false,
+  configureWebpack: {
+    optimization: {
+        splitChunks: {
+            minSize: 10000,
+            maxSize: 250000,
+        }
+    }
+  },
   pwa: {
     name: 'Easy Scrum Standup',
     themeColor: '#1976d2',
