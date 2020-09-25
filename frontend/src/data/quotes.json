@@ -51,7 +51,7 @@
     },
     {
         "text": "Sorry that slipped off my to-do, will have a look at it today.",
-        "tags": [4]
+        "tags": [3]
     },
     {
         "text": "My password has expired, anyone has a link to the helpdesk?",
@@ -59,6 +59,6 @@
     },
     {
         "text": "We should consider changing the management framework, I do not think this way of working is ideal for our project.",
-        "tags": [4]
+        "tags": [3]
     }
 ]
