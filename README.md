@@ -22,7 +22,7 @@
     <a href="https://github.com/nochoice/easy-scrum-standup"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://stand-up-quotes.web.app/" target="_blank">Visit Application</a>
+    <a href="https://easyscrum.eu/" target="_blank">Visit Application</a>
     ·
     <a href="https://github.com/nochoice/easy-scrum-standup/issues">Report Bug</a>
     ·
