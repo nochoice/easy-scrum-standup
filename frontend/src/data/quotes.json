@@ -10,6 +10,11 @@
         "tags": [0]
     },
     {
+        "type": 0,
+        "text": "I have network issues, so I cannot join DS today.",
+        "tags": [1]
+    },
+    {
         "type": 2,
         "text": "I have send them a mail, waiting for reply.",
         "tags": [2]
