@@ -11,39 +11,42 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.2
       
-#       - name: Setup Node.js environment
-#         uses: actions/setup-node@v2-beta
-#         with:
-#           node-version: '12'
-
-      - uses: actions/cache@v2
-        id: firebase-bin
+      - uses: actions/setup-node@v3
         with:
-          path: ./firebase_bin
-          key: ${{ runner.os }}
-          restore-keys: |
-            ${{ runner.os }}
+          node-version: 16
 
-      - uses: bahmutov/npm-install@HEAD
+      - name: Run install
+        uses: borales/actions-yarn@v4
         with:
-          working-directory: frontend
-      
-      - name: Download firebase binary if not in cache or os change
-        if: steps.firebase-bin.outputs.cache-hit != 'true'
-        run: |
-          curl -Lo ./firebase_bin https://firebase.tools/bin/linux/latest
+          cmd: install
+          dir: frontend
+
+      - name: Build production bundle
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
+          dir: frontend
+
+      # - uses: bahmutov/npm-install@HEAD
+      #   with:
+      #     working-directory: frontend
         
-      - name: Build frontend dependencies
-        run: yarn build
-        working-directory: frontend
+      # - name: Build frontend dependencies
+      #   run: yarn build
+      #   working-directory: frontend
         
       - name: Copy frontend to public firabase structure
         run: cp -a frontend/dist/. public/
-      
-      - name: Deploy to Firebase
-        run: |
-          chmod 755 ./firebase_bin
-          ./firebase_bin deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
 
-      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAND_UP_QUOTES }}
+          projectId: stand-up-quotes
+          channelId: production
       
