@@ -1,73 +1,922 @@
 [
-    {
-        "type": 1,
-        "text": "Yesterday I had good progress on my task, but still not finished. I will need to roll it today for some time.",
-        "tags": [1]
-    },
-    {
-        "type": 0,
-        "text": "Had internet issues at home. But working on it now.",
-        "tags": [0]
-    },
-    {
-        "type": 0,
-        "text": "I have network issues, so I cannot join DS today.",
-        "tags": [1]
-    },
-    {
-        "type": 2,
-        "text": "I have send them a mail, waiting for reply.",
-        "tags": [2]
-    },
-    {
-        "type": 1,
-        "text": "Reading documentation about Kubernetes.",
-        "tags": [1]
-    },
-    {
-        "type": 1,
-        "text": "Solving problems with test environments.",
-        "tags": [1]
-    },
-    {
-        "type": 1,
-        "text": "My laptop is updating. Need to wait for finish it.",
-        "tags": [1]
-    },
-    {
-        "text": "Yesterday I participated on another project. So nothing else to say.",
-        "tags": [3]
-    },
-    {
-        "text": "The MSSA got stuck during the PDC so I had to rake the ICIM database again, so that will take the whole day to regress test.",
-        "tags": [1]
-    },
-    {
-        "text": "Yesterday I had a fruit full meeting with customer and we arrange a follow up for next week. I will let you know what will be next steps.",
-        "tags": [3]
-    },
-    {
-        "text": "I was deploying new code yesterday, but it failed by the last step, so need to re-run it.",
-        "tags": [1]
-    },
-    {
-        "text": "Are we sure we use the right framework for this project?",
-        "tags": [1]
-    },
-    {
-        "text": "Sorry that slipped off my to-do, will have a look at it today.",
-        "tags": [3]
-    },
-    {
-        "text": "My password has expired, anyone has a link to the helpdesk?",
-        "tags": [1]
-    },
-    {
-        "text": "We should consider changing the management framework, I do not think this way of working is ideal for our project.",
-        "tags": [3]
-    },
-    {
-        "text": "I will not be able to progress much today as we have school meeting for my kid.",
-        "tags": [4]
-    }
+  {
+    "text": "Yesterday I had good progress on my task, but still not finished. I will need to roll it today for some time.",
+    "tags": [1]
+  },
+  {
+    "text": "Had internet issues at home. But working on it now.",
+    "tags": [4]
+  },
+  {
+    "text": "I have network issues, so I cannot join DS today.",
+    "tags": [1]
+  },
+  {
+    "text": "I have send them a mail, waiting for reply.",
+    "tags": [2]
+  },
+  {
+    "text": "Reading documentation about Kubernetes.",
+    "tags": [1]
+  },
+  {
+    "text": "Solving problems with test environments.",
+    "tags": [1]
+  },
+  {
+    "text": "My laptop is updating. Need to wait for finish it.",
+    "tags": [1]
+  },
+  {
+    "text": "Yesterday I participated on another project. So nothing else to say.",
+    "tags": [3]
+  },
+  {
+    "text": "The MSSA got stuck during the PDC so I had to rake the ICIM database again, so that will take the whole day to regress test.",
+    "tags": [1]
+  },
+  {
+    "text": "Yesterday I had a fruit full meeting with customer and we arrange a follow up for next week. I will let you know what will be next steps.",
+    "tags": [3]
+  },
+  {
+    "text": "I was deploying new code yesterday, but it failed by the last step, so need to re-run it.",
+    "tags": [1]
+  },
+  {
+    "text": "Are we sure we use the right framework for this project?",
+    "tags": [1]
+  },
+  {
+    "text": "Sorry that slipped off my to-do, will have a look at it today.",
+    "tags": [3]
+  },
+  {
+    "text": "My password has expired, anyone has a link to the helpdesk?",
+    "tags": [1]
+  },
+  {
+    "text": "We should consider changing the management framework, I do not think this way of working is ideal for our project.",
+    "tags": [3]
+  },
+  {
+    "text": "I will not be able to progress much today as we have school meeting for my kid.",
+    "tags": [5]
+  },
+  {
+    "text": "I was debugging a critical issue in the codebase.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent time upgrading the development environment.",
+    "tags": [1]
+  },
+  {
+    "text": "My computer crashed, so I had to recover my workspace.",
+    "tags": [1]
+  },
+  {
+    "text": "The deployment failed, and I had to rollback the changes.",
+    "tags": [1]
+  },
+  {
+    "text": "I was resolving merge conflicts in the repository.",
+    "tags": [1]
+  },
+  {
+    "text": "I needed feedback from the design team to proceed.",
+    "tags": [2]
+  },
+  {
+    "text": "I am waiting for test results to validate my changes.",
+    "tags": [2]
+  },
+  {
+    "text": "My task is blocked because another team has not delivered their part.",
+    "tags": [2]
+  },
+  {
+    "text": "I was waiting for the product owner to clarify the requirements.",
+    "tags": [2]
+  },
+  {
+    "text": "I am waiting for an external vendor to respond to my query.",
+    "tags": [2]
+  },
+  {
+    "text": "I was preparing a presentation for the upcoming stakeholder meeting.",
+    "tags": [3]
+  },
+  {
+    "text": "I participated in a brainstorming session to refine the project strategy.",
+    "tags": [3]
+  },
+  {
+    "text": "I was reviewing project milestones with the management team.",
+    "tags": [3]
+  },
+  {
+    "text": "I was updating the project roadmap to align with the new priorities.",
+    "tags": [3]
+  },
+  {
+    "text": "I had to resolve a scheduling conflict for an upcoming project phase.",
+    "tags": [3]
+  },
+  {
+    "text": "I had to take my child to a doctor’s appointment.",
+    "tags": [4]
+  },
+  {
+    "text": "I was helping my kid with their school project.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to deal with an urgent issue at home.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to manage some personal commitments yesterday.",
+    "tags": [4]
+  },
+  {
+    "text": "My child’s school had a special event I had to attend.",
+    "tags": [4]
+  },
+  {
+    "text": "I was setting up a home office due to quarantine requirements.",
+    "tags": [5]
+  },
+  {
+    "text": "I was dealing with health issues related to Covid-19.",
+    "tags": [5]
+  },
+  {
+    "text": "I spent time arranging Covid-19 testing for my family.",
+    "tags": [5]
+  },
+  {
+    "text": "I had to join a mandatory health and safety briefing.",
+    "tags": [5]
+  },
+  {
+    "text": "I was addressing challenges related to remote work due to Covid-19.",
+    "tags": [5]
+  },
+  {
+    "text": "I was researching a new tool for our project.",
+    "tags": [1]
+  },
+  {
+    "text": "I explored alternative approaches to solving a technical problem.",
+    "tags": [1]
+  },
+  {
+    "text": "I analyzed logs to identify the source of a bug.",
+    "tags": [1]
+  },
+  {
+    "text": "I tested various configurations to optimize system performance.",
+    "tags": [1]
+  },
+  {
+    "text": "I was fixing minor bugs identified during testing.",
+    "tags": [1]
+  },
+  {
+    "text": "I needed to coordinate with a vendor to resolve a dependency issue.",
+    "tags": [2]
+  },
+  {
+    "text": "I was waiting for a legal approval to proceed with the project.",
+    "tags": [2]
+  },
+  {
+    "text": "I was following up on an email sent to a third-party provider.",
+    "tags": [2]
+  },
+  {
+    "text": "I had to consult with the finance department for budget clarification.",
+    "tags": [2]
+  },
+  {
+    "text": "I was awaiting final sign-off from the project sponsor.",
+    "tags": [2]
+  },
+  {
+    "text": "I was updating the team on the recent changes in project scope.",
+    "tags": [3]
+  },
+  {
+    "text": "I had a one-on-one meeting with a team member to resolve conflicts.",
+    "tags": [3]
+  },
+  {
+    "text": "I worked on documenting lessons learned from the last sprint.",
+    "tags": [3]
+  },
+  {
+    "text": "I participated in a workshop to improve team collaboration.",
+    "tags": [3]
+  },
+  {
+    "text": "I was preparing for the quarterly business review presentation.",
+    "tags": [3]
+  },
+  {
+    "text": "I had to handle a plumbing issue at home.",
+    "tags": [4]
+  },
+  {
+    "text": "I was assisting my elderly family member with their needs.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to attend an urgent family meeting.",
+    "tags": [4]
+  },
+  {
+    "text": "I was helping with home renovations that couldn’t be postponed.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to care for a sick family member.",
+    "tags": [4]
+  },
+  {
+    "text": "I was attending a Covid-19 vaccination appointment.",
+    "tags": [5]
+  },
+  {
+    "text": "I had to coordinate remote schooling for my child due to quarantine.",
+    "tags": [5]
+  },
+  {
+    "text": "I was dealing with supply chain disruptions caused by Covid-19.",
+    "tags": [5]
+  },
+  {
+    "text": "I participated in a Covid-19 response planning meeting.",
+    "tags": [5]
+  },
+  {
+    "text": "I was adjusting our project timelines to accommodate Covid-19 delays.",
+    "tags": [5]
+  },
+  {
+    "text": "I accidentally closed the tab with my task, and it took me half the day to remember what it was.",
+    "tags": [1]
+  },
+  {
+    "text": "I was debugging the debugger, and then debugging why the debugger’s debugger wasn’t working.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent the day renaming variables to make them sound cooler.",
+    "tags": [1]
+  },
+  {
+    "text": "I wrote a function so complex that even I don’t understand it now.",
+    "tags": [1]
+  },
+  {
+    "text": "I tried to deploy yesterday but forgot to save the code. Rookie mistake!",
+    "tags": [1]
+  },
+  {
+    "text": "I was waiting for the stars to align in the Jenkins pipeline.",
+    "tags": [2]
+  },
+  {
+    "text": "I sent a follow-up email, and now I’m waiting for them to follow up my follow-up.",
+    "tags": [2]
+  },
+  {
+    "text": "My task depends on Bob, and Bob said he’d do it after his lunch… yesterday.",
+    "tags": [2]
+  },
+  {
+    "text": "I’m waiting for a miracle, or at least a working API.",
+    "tags": [2]
+  },
+  {
+    "text": "I’m blocked by a team member who is also blocked by me. Classic loop.",
+    "tags": [2]
+  },
+  {
+    "text": "I was in a 3-hour meeting to discuss how we can have fewer meetings.",
+    "tags": [3]
+  },
+  {
+    "text": "I prepared a Gantt chart so detailed it now looks like modern art.",
+    "tags": [3]
+  },
+  {
+    "text": "We had a meeting to discuss why nothing was discussed in the last meeting.",
+    "tags": [3]
+  },
+  {
+    "text": "I spent all day negotiating whether to use tabs or spaces in our codebase.",
+    "tags": [3]
+  },
+  {
+    "text": "I was reviewing a PowerPoint presentation that had more animations than information.",
+    "tags": [3]
+  },
+  {
+    "text": "My cat decided my keyboard was a bed, and I had no heart to move him.",
+    "tags": [4]
+  },
+  {
+    "text": "I spent half the day rescuing a Lego piece from the vacuum cleaner.",
+    "tags": [4]
+  },
+  {
+    "text": "My dog ate my internet cable. Again.",
+    "tags": [4]
+  },
+  {
+    "text": "My kid decided to play ‘office’ and accidentally shredded important documents.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to explain to my grandmother why she can’t send emails to her microwave.",
+    "tags": [4]
+  },
+  {
+    "text": "I sanitized my laptop so thoroughly that I accidentally muted my microphone for hours.",
+    "tags": [5]
+  },
+  {
+    "text": "I spent 2 hours adjusting my mask so it looked good on Zoom.",
+    "tags": [5]
+  },
+  {
+    "text": "I was on a call and realized too late that my camera was on while I was eating cereal.",
+    "tags": [5]
+  },
+  {
+    "text": "I updated my Slack status to ‘Quarantine Survivor’ and got too many reactions to work.",
+    "tags": [5]
+  },
+  {
+    "text": "I attended a virtual happy hour that lasted way past office hours.",
+    "tags": [5]
+  },
+  {
+    "text": "I spent an hour figuring out why my code wasn’t working, only to realize I was on the wrong branch.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent the day optimizing my workspace—my chair is now 2% comfier.",
+    "tags": [1]
+  },
+  {
+    "text": "I wrote an email so long, Outlook suggested I publish it as a book.",
+    "tags": [2]
+  },
+  {
+    "text": "I spent 30 minutes deciding which emoji to use in a Slack reply.",
+    "tags": [2]
+  },
+  {
+    "text": "I realized my task is a duplicate of someone else’s task, so I spent the day figuring out who did it better.",
+    "tags": [2]
+  },
+  {
+    "text": "I accidentally scheduled a meeting during my lunch and had to pretend I wasn’t eating.",
+    "tags": [3]
+  },
+  {
+    "text": "I spent the day organizing my inbox by color. Productivity unlocked!",
+    "tags": [3]
+  },
+  {
+    "text": "I tried to take meeting notes but got distracted by the host’s virtual background.",
+    "tags": [3]
+  },
+  {
+    "text": "I was in a brainstorming session where the best idea was to have another brainstorming session.",
+    "tags": [3]
+  },
+  {
+    "text": "My toddler decided to unplug my computer to ‘save electricity.’",
+    "tags": [4]
+  },
+  {
+    "text": "I spent the day trying to explain to my kid why I can’t play Minecraft during work hours.",
+    "tags": [4]
+  },
+  {
+    "text": "My neighbor decided to mow the lawn during all my Zoom meetings.",
+    "tags": [4]
+  },
+  {
+    "text": "I accidentally muted myself and didn’t realize it for an entire meeting.",
+    "tags": [5]
+  },
+  {
+    "text": "I spent 2 hours trying to fix my WiFi, only to realize my router was unplugged.",
+    "tags": [5]
+  },
+  {
+    "text": "I got distracted during a meeting because someone’s cat was the star of the show.",
+    "tags": [5]
+  },
+  {
+    "text": "I was late to the meeting because I was experimenting with Zoom filters.",
+    "tags": [5]
+  },
+  {
+    "text": "I spent the day trying to perfect my ‘thinking face’ for video calls.",
+    "tags": [5]
+  },
+  {
+    "text": "I was optimizing a function, and now it runs so fast I’m not sure it’s even running.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent 3 hours trying to remember the name of a file I just saved.",
+    "tags": [1]
+  },
+  {
+    "text": "I accidentally pushed debug logs to production and had to cover my tracks.",
+    "tags": [1]
+  },
+  {
+    "text": "I created a new folder to organize my desktop, but now I can’t find anything.",
+    "tags": [1]
+  },
+  {
+    "text": "Yesterday I was investigating a critical issue where the system crashed intermittently under specific conditions during peak hours. After multiple test runs, I identified a memory leak in the main API service, and today I’ll work on preparing a patch to resolve it.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent most of my day upgrading our development environment to support the latest framework version required for the project. While doing so, I encountered dependency conflicts, which took additional time to resolve.",
+    "tags": [1]
+  },
+  {
+    "text": "I worked on debugging a complex issue related to user authentication. After analyzing server logs and replicating the problem locally, I discovered a misconfigured environment variable causing token expiration to fail.",
+    "tags": [1]
+  },
+  {
+    "text": "I was waiting for the client to finalize the new requirements document. Without this information, I couldn’t proceed with implementing the planned changes, but I used the time to prepare a list of clarifications for tomorrow's call.",
+    "tags": [2]
+  },
+  {
+    "text": "My task was blocked because I needed feedback from the UI/UX team regarding the proposed design changes. I followed up with them yesterday and expect to have their input by end of today.",
+    "tags": [2]
+  },
+  {
+    "text": "I spent time reviewing the upcoming release schedule and coordinating with the QA team to ensure all critical test cases are covered. We identified some gaps that will need to be addressed this week.",
+    "tags": [3]
+  },
+  {
+    "text": "Yesterday, I participated in a brainstorming session with the management team to identify potential risks in the next sprint. We discussed resource allocation and finalized an initial risk mitigation plan.",
+    "tags": [3]
+  },
+  {
+    "text": "My day was focused on preparing a detailed project update for our stakeholders. This included summarizing progress, risks, and upcoming milestones for the quarter.",
+    "tags": [3]
+  },
+  {
+    "text": "I had to attend a school meeting for my child, where we discussed their academic progress and upcoming school events. As a result, I had less time to dedicate to my tasks in the afternoon.",
+    "tags": [4]
+  },
+  {
+    "text": "There was an unexpected plumbing issue at home, which required my immediate attention to prevent further damage. Unfortunately, this disrupted my work schedule for the day.",
+    "tags": [4]
+  },
+  {
+    "text": "I spent part of the day dealing with remote learning challenges for my child. The school platform was down, and I had to coordinate with their teacher to ensure they didn’t miss important lessons.",
+    "tags": [4]
+  },
+  {
+    "text": "Yesterday I worked on revising our remote work policy in response to Covid-19-related challenges raised by team members during the last meeting. The updated draft is ready for review today.",
+    "tags": [5]
+  },
+  {
+    "text": "I had to schedule a Covid-19 test for myself and my family due to potential exposure. This took longer than expected due to limited availability of appointments in our area.",
+    "tags": [5]
+  },
+  {
+    "text": "My day was partially spent attending a mandatory company webinar on workplace safety and health measures during the pandemic. This provided valuable insights but took up a significant portion of the day.",
+    "tags": [5]
+  },
+  {
+    "text": "I was investigating why the automated deployment pipeline was failing. After analyzing the logs and verifying the configurations, I realized a recent change in environment variables wasn’t propagated correctly to all servers.",
+    "tags": [1]
+  },
+  {
+    "text": "I worked on documenting technical details for a new feature we’re planning to implement next sprint. The goal was to create a clear and concise reference for the team, covering use cases, architecture, and limitations.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent the day clarifying dependencies for my task. I identified that two external APIs we rely on have overlapping functionalities, and I drafted a proposal to streamline which one we should use.",
+    "tags": [2]
+  },
+  {
+    "text": "I was waiting for approvals from the finance team to proceed with purchasing new software tools. Meanwhile, I prepared a cost-benefit analysis to justify the investment further.",
+    "tags": [2]
+  },
+  {
+    "text": "My focus was on finalizing the agenda for the upcoming project review meeting. I also coordinated with team leads to gather relevant updates and metrics to include in the presentation.",
+    "tags": [3]
+  },
+  {
+    "text": "I worked with HR to resolve a resource allocation issue. A team member needed to be reassigned to another project temporarily, and I ensured that our workload remains balanced during their absence.",
+    "tags": [3]
+  },
+  {
+    "text": "My day started with addressing a critical production issue that impacted end-users. The root cause was traced to an unhandled edge case, which I documented for the team to review today.",
+    "tags": [1]
+  },
+  {
+    "text": "I worked on drafting a detailed implementation plan for our upcoming feature release. This included breaking down tasks, assigning timelines, and identifying potential risks.",
+    "tags": [1, 3]
+  },
+  {
+    "text": "I had to coordinate with our vendor for support on a tool we’re using. They provided partial guidance, but the issue remains unresolved, so I escalated it to their technical team.",
+    "tags": [2]
+  },
+  {
+    "text": "I was preparing for a leadership workshop by reviewing team performance metrics and identifying areas where we can improve collaboration and productivity.",
+    "tags": [3]
+  },
+  {
+    "text": "There was a power outage in my area yesterday, which significantly impacted my ability to work on assigned tasks. I spent the evening catching up on critical updates using mobile data.",
+    "tags": [4]
+  },
+  {
+    "text": "I spent part of the day reviewing recent changes to the company’s Covid-19 protocols. This included updating documentation and communicating the changes to my team.",
+    "tags": [5]
+  },
+  {
+    "text": "I was troubleshooting an issue with our testing environment, which wasn’t provisioning correctly. It turned out to be a misconfigured network policy, which I resolved late in the evening.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent time understanding customer feedback regarding a recently deployed feature. This involved analyzing survey results and identifying key areas for improvement.",
+    "tags": [3]
+  },
+  {
+    "text": "I was setting up a new automated report for the team. This required extracting data from multiple sources and ensuring the visualizations accurately represent key metrics.",
+    "tags": [1, 3]
+  },
+  {
+    "text": "My dog decided to ‘help’ me by stepping on my keyboard, which caused me to lose progress on a task. I had to spend extra time recovering and redoing the work.",
+    "tags": [4]
+  },
+  {
+    "text": "I was distracted yesterday because my cat knocked over a glass of water onto my work laptop. I had to dry it out and troubleshoot to ensure no permanent damage.",
+    "tags": [4]
+  },
+  {
+    "text": "My parrot kept mimicking notification sounds all day, making it hard for me to focus. I’ll work on soundproofing my workspace today.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to rush my dog to the vet yesterday due to an unexpected allergic reaction. Thankfully, they’re okay now, but it took up a significant portion of my day.",
+    "tags": [4]
+  },
+  {
+    "text": "My cat decided to nap on my desk chair, and moving her felt like a betrayal. So, I worked from the couch, which slowed me down.",
+    "tags": [4]
+  },
+  {
+    "text": "I spent time fixing my internet connection after my rabbit chewed through the Ethernet cable. It’s patched up now, but it delayed my progress yesterday.",
+    "tags": [4]
+  },
+  {
+    "text": "My puppy was feeling unwell yesterday, so I had to monitor them closely and ensure they were comfortable. As a result, I couldn’t finish all my planned tasks.",
+    "tags": [4]
+  },
+  {
+    "text": "I was on a video call, but my dog decided to bark every time someone spoke. I had to spend extra time catching up on what I missed.",
+    "tags": [4, 5]
+  },
+  {
+    "text": "My hamster escaped from its cage during the day, and I had to search for it before it caused any mischief. This delayed my work progress.",
+    "tags": [4]
+  },
+  {
+    "text": "Yesterday, I had to clean up after my cat decided that my work files were the perfect spot for their ‘accident.’",
+    "tags": [4]
+  },
+  {
+    "text": "My bird flew out of its cage and decided to perch on my monitor. I had to carefully coax it back, which interrupted my workflow.",
+    "tags": [4]
+  },
+  {
+    "text": "I spent part of the day chasing my dog around the garden after they stole my wireless mouse. They thought it was their new toy.",
+    "tags": [4]
+  },
+  {
+    "text": "My lizard managed to climb onto my keyboard and accidentally sent a half-written email to the entire team. I had to do damage control.",
+    "tags": [4]
+  },
+  {
+    "text": "I was taking care of my goldfish, who wasn’t looking too well. I spent some time researching and addressing potential issues with their tank setup.",
+    "tags": [4]
+  },
+  {
+    "text": "My cat was fascinated by my typing and kept swatting at the keyboard. It was a constant battle to keep them off my workspace.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to wait for my dog walker to arrive before I could fully concentrate on my tasks. They were running late, which threw off my schedule.",
+    "tags": [4]
+  },
+  {
+    "text": "My dog found my headphones and decided to chew them. I spent a chunk of the day fixing and replacing them so I could join calls again.",
+    "tags": [4]
+  },
+  {
+    "text": "My kitten accidentally unplugged my work setup while chasing a toy. It took me a while to get everything back up and running.",
+    "tags": [4]
+  },
+  {
+    "text": "I had to stop mid-task because my dog started barking at the delivery driver and wouldn’t calm down until I reassured them everything was okay.",
+    "tags": [4]
+  },
+  {
+    "text": "My cat decided to bring me a ‘gift’ from outside during my lunch break, and I had to clean up the mess. It threw off my afternoon productivity.",
+    "tags": [4]
+  },
+  {
+    "text": "I spent a significant portion of my day resolving a miscommunication about task ownership with a teammate. We’ve clarified responsibilities now, so it shouldn’t happen again.",
+    "tags": [3]
+  },
+  {
+    "text": "There was some confusion over priorities in the team yesterday, and I had to realign with everyone to ensure we’re working on the most critical tasks.",
+    "tags": [3]
+  },
+  {
+    "text": "A teammate accidentally overwrote some of my changes in the repository. I spent time restoring my work and coordinating with them to prevent this in the future.",
+    "tags": [1, 3]
+  },
+  {
+    "text": "We had a lengthy discussion in the team about code standards, which delayed my progress on the feature I was working on.",
+    "tags": [1, 3]
+  },
+  {
+    "text": "I spent part of the day trying to resolve a dependency issue caused by a team member merging incomplete code into the main branch.",
+    "tags": [1]
+  },
+  {
+    "text": "I had to step in and mediate a disagreement between two team members about the direction of a project. This took more time than expected, but it helped smooth things over.",
+    "tags": [3]
+  },
+  {
+    "text": "Our team meeting ran longer than planned because we were trying to resolve overlapping responsibilities between team members.",
+    "tags": [3]
+  },
+  {
+    "text": "There were delays yesterday because a teammate hadn’t completed their part of a shared task. I followed up with them to ensure it’s back on track.",
+    "tags": [2, 3]
+  },
+  {
+    "text": "I spent time reviewing a colleague’s work to ensure it met the quality standards before moving forward. It needed some revisions, which delayed progress slightly.",
+    "tags": [3]
+  },
+  {
+    "text": "We had a discussion in the team about communication issues that were causing delays. I spent some time drafting a clearer process to avoid such issues in the future.",
+    "tags": [3]
+  },
+  {
+    "text": "I realized that some of the requirements provided by a teammate were incomplete, so I had to chase them down for clarification before proceeding.",
+    "tags": [2, 3]
+  },
+  {
+    "text": "A team member accidentally shared an outdated document in the meeting yesterday, which caused some confusion. I helped clarify and ensure everyone had the correct version.",
+    "tags": [3]
+  },
+  {
+    "text": "There was some misalignment on task priorities in our stand-up, which I had to address before I could continue my work.",
+    "tags": [3]
+  },
+  {
+    "text": "A teammate used an older version of our tool, which created inconsistencies in the outputs. I worked with them to update their setup.",
+    "tags": [1, 3]
+  },
+  {
+    "text": "We had a team brainstorming session yesterday, but it got sidetracked into unrelated discussions. I’ll help refocus our next session to be more productive.",
+    "tags": [3]
+  },
+  {
+    "text": "I spent time cleaning up the shared workspace after noticing that some files were incorrectly organized by a team member. It’s now easier for everyone to find what they need.",
+    "tags": [1, 3]
+  },
+  {
+    "text": "A colleague needed extra help understanding the new system we’re using, so I spent part of my day walking them through it. Hopefully, this speeds up their future work.",
+    "tags": [3]
+  },
+  {
+    "text": "We had some friction in the team over decision-making, so I proposed a new framework to make the process more transparent and collaborative.",
+    "tags": [3]
+  },
+  {
+    "text": "I realized during a review that there was a gap in understanding between teams about the project scope. I scheduled a follow-up meeting to get everyone on the same page.",
+    "tags": [3]
+  },
+  {
+    "text": "There was a delay yesterday because a teammate didn’t have access to the necessary tools. I worked with IT to expedite their access and resolve the issue.",
+    "tags": [2, 3]
+  },
+  {
+    "text": "I spent most of the day creating a presentation for the upcoming stakeholder meeting, ensuring the slides are both visually appealing and data-driven.",
+    "tags": [3]
+  },
+  {
+    "text": "I had to redo a significant portion of my PowerPoint slides after realizing some of the data was outdated. I’ve now verified everything is accurate.",
+    "tags": [3]
+  },
+  {
+    "text": "I worked on integrating feedback from the team into the PowerPoint presentation. This involved redesigning a few slides and adding clarifications to key points.",
+    "tags": [3]
+  },
+  {
+    "text": "I encountered formatting issues in the presentation when exporting it to PDF. I had to troubleshoot the problem to ensure the slides looked professional.",
+    "tags": [3]
+  },
+  {
+    "text": "I spent time searching for the perfect template for our project update presentation to make it align with our branding guidelines.",
+    "tags": [3]
+  },
+  {
+    "text": "My day involved animating key slides in PowerPoint to better illustrate the flow of our project milestones. It took longer than expected to get the timing right.",
+    "tags": [3]
+  },
+  {
+    "text": "I had to condense a 30-slide presentation into a 10-minute version for a client meeting. Prioritizing the most relevant content took a significant amount of time.",
+    "tags": [3]
+  },
+  {
+    "text": "I collaborated with the design team to enhance the visual elements of our PowerPoint presentation. The updated version looks much more engaging now.",
+    "tags": [3]
+  },
+  {
+    "text": "I was preparing a presentation and realized I didn’t have access to the latest figures. I had to follow up with the data team before I could complete it.",
+    "tags": [3]
+  },
+  {
+    "text": "I spent the day reworking the narrative of our presentation to make it more compelling and better suited to our audience.",
+    "tags": [3]
+  },
+  {
+    "text": "I had to align the presentation format with the company’s updated branding guidelines. This required updating fonts, colors, and layouts across all slides.",
+    "tags": [3]
+  },
+  {
+    "text": "There was a mix-up in slide versions, so I spent time merging content from two different drafts into the final presentation.",
+    "tags": [3]
+  },
+  {
+    "text": "I reviewed the PowerPoint slides prepared by a colleague and suggested changes to improve the clarity and impact of key points.",
+    "tags": [3]
+  },
+  {
+    "text": "I added interactive elements to the PowerPoint slides to make our upcoming workshop more engaging for participants.",
+    "tags": [3]
+  },
+  {
+    "text": "I spent time troubleshooting a corrupted PowerPoint file. Thankfully, I managed to recover it using the backup version.",
+    "tags": [3]
+  },
+  {
+    "text": "I worked on translating the presentation for our international team members. This required adapting some slides to better suit cultural differences.",
+    "tags": [3]
+  },
+  {
+    "text": "I participated in a feedback session on the draft presentation and spent the rest of the day incorporating suggestions into the final version.",
+    "tags": [3]
+  },
+  {
+    "text": "I spent the day debugging a NullPointerException in a Java microservice. It turned out to be caused by an uninitialized configuration value in the deployment environment.",
+    "tags": [1]
+  },
+  {
+    "text": "I was tracking down a memory leak in a Python script. After running multiple profiling tools, I found that an unused object reference was persisting longer than expected.",
+    "tags": [1]
+  },
+  {
+    "text": "I encountered a race condition in a Java multithreading implementation. It required significant refactoring to ensure thread safety with synchronized blocks.",
+    "tags": [1]
+  },
+  {
+    "text": "My JavaScript application was throwing a CORS error when making API calls. I spent time configuring the backend to include proper headers.",
+    "tags": [1]
+  },
+  {
+    "text": "I struggled with debugging a segmentation fault in a C++ library used by our Python project. It took time to pinpoint the root cause in the compiled extension.",
+    "tags": [1]
+  },
+  {
+    "text": "I ran into a compatibility issue when upgrading a dependency in a Node.js project. The new version introduced breaking changes that required updating several modules.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent hours trying to resolve an issue where a Java Hibernate query was returning inconsistent results. It turned out to be a caching problem.",
+    "tags": [1]
+  },
+  {
+    "text": "A Python script using pandas was running slower than expected on large datasets. I optimized it by switching to vectorized operations.",
+    "tags": [1]
+  },
+  {
+    "text": "My React application had rendering issues caused by improper state management in Redux. I had to rework the reducer logic to fix it.",
+    "tags": [1]
+  },
+  {
+    "text": "I encountered a floating-point precision issue in JavaScript that caused discrepancies in calculations. I had to refactor the logic to use a library for precise arithmetic.",
+    "tags": [1]
+  },
+  {
+    "text": "I had to fix a broken test suite in Python because mocking wasn’t properly configured for external API calls.",
+    "tags": [1]
+  },
+  {
+    "text": "My Java application was crashing due to stack overflow errors. After analysis, I discovered an infinite recursion in one of the utility methods.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent time fixing a dependency conflict between two npm packages that required manual resolution in the package-lock.json file.",
+    "tags": [1]
+  },
+  {
+    "text": "I was troubleshooting a Python Flask app that wouldn’t start because of an incorrectly configured environment variable in the Docker container.",
+    "tags": [1]
+  },
+  {
+    "text": "My Spring Boot application was failing to connect to the database. It turned out to be an expired SSL certificate on the database server.",
+    "tags": [1]
+  },
+  {
+    "text": "I had to debug a JavaScript issue where a deeply nested object was undefined, causing the app to crash. I refactored it to include safer access patterns.",
+    "tags": [1]
+  },
+  {
+    "text": "I encountered an issue with circular imports in a Python project, which required re-organizing the module structure to resolve.",
+    "tags": [1]
+  },
+  {
+    "text": "My Java application was running out of memory during large data processing. I implemented batching to reduce memory usage.",
+    "tags": [1]
+  },
+  {
+    "text": "I was debugging a slow SQL query in a Python application. After profiling, I added indexes to the database to improve performance.",
+    "tags": [1]
+  },
+  {
+    "text": "A TypeScript project wouldn’t compile due to mismatched types in third-party libraries. I had to extend the typings to fix the build.",
+    "tags": [1]
+  },
+  {
+    "text": "My Python Django app was failing to migrate because of a conflict between a new model and an existing database schema.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent the day debugging a Java Lambda function that wasn’t executing properly due to missing IAM permissions.",
+    "tags": [1]
+  },
+  {
+    "text": "I was dealing with an issue in a Python script where Unicode encoding errors occurred while processing input data.",
+    "tags": [1]
+  },
+  {
+    "text": "My JavaScript app had a memory issue caused by event listeners not being properly removed, leading to a gradual performance degradation.",
+    "tags": [1]
+  },
+  {
+    "text": "I encountered a problem with missing WebSocket connections in a Node.js app due to improper handling of socket lifecycle events.",
+    "tags": [1]
+  },
+  {
+    "text": "I was debugging a threading issue in Python where locks weren’t being released properly, causing deadlocks in the application.",
+    "tags": [1]
+  },
+  {
+    "text": "My Java application wasn’t logging errors because the logging configuration file was incorrectly placed in the classpath.",
+    "tags": [1]
+  },
+  {
+    "text": "I encountered a compatibility issue in my JavaScript app when integrating a new browser API that wasn’t supported by all target platforms.",
+    "tags": [1]
+  },
+  {
+    "text": "I spent time fixing an issue where a Python multiprocessing script wasn’t closing worker processes properly, leading to resource exhaustion.",
+    "tags": [1]
+  },
+  {
+    "text": "I had trouble deploying a Node.js app because the build process wasn’t compatible with the production environment’s OS.",
+    "tags": [1]
+  },
+  {
+    "text": "My Java application was throwing ClassNotFoundException because of a missing dependency in the runtime classpath.",
+    "tags": [1]
+  },
+  {
+    "text": "I was fixing a bug in a Python project where timezone handling in datetime objects caused incorrect results in scheduled tasks.",
+    "tags": [1]
+  }
 ]
